@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10</title>
+
+    <style>
+        p {
+            font-size: 0.7cm;
+        }
+        h1 {
+            background-color: rgb(159, 250, 255);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            border: 2px solid black;
+        }
+        h2 {
+            background-color: greenyellow;
+            width: 20vw;
+            border: 1px dashed darkblue;
+            font-size: 0.9cm;
+        }
+        .contain {
+            display : flex;
+        }
+        #box1 { 
+            background-color: aquamarine;
+            border: 2px solid black;
+            width:25vw;
+        }  
+        #box2 { 
+            background-color: rgb(175, 203, 255);
+            border: 2px solid black;
+            width:25vw;
+        }  
+        #box3 { 
+            background-color: rgb(255, 246, 174);
+            border: 2px solid black;
+            width:25vw;
+        }  
+        #box4 { 
+            background-color: rgb(255, 209, 238);
+            border: 2px solid black;
+            width:25vw;
+        } 
+
+        .contain1 {
+            display : flex;
+            flex-direction: column;
+        }
+        #box11 { 
+            background-color: aquamarine;
+            border: 2px solid black;
+            width:25vw;
+        }  
+        #box22 { 
+            background-color: rgb(175, 203, 255);
+            border: 2px solid black;
+            width:25vw;
+        }  
+        #box33 { 
+            background-color: rgb(255, 246, 174);
+            border: 2px solid black;
+            width:25vw;
+        }  
+        #box44 { 
+            background-color: rgb(255, 209, 238);
+            border: 2px solid black;
+            width:25vw;
+        }
+
+        .contain11 {
+            display : flex;
+            flex-wrap: wrap;
+        }
+        #box111 { 
+            background-color: aquamarine;
+            border: 2px solid black;
+            width:22vw;
+        }  
+        #box222 { 
+            background-color: rgb(175, 203, 255);
+            border: 2px solid black;
+            width:22vw;
+        }  
+        #box333 { 
+            background-color: rgb(255, 246, 174);
+            border: 2px solid black;
+            width:22vw;
+        }  
+        #box444 { 
+            background-color: rgb(255, 209, 238);
+            border: 2px solid black;
+            width:22vw;
+        }
+
+        .contain111 {
+            display : flex;
+            height:100px;
+            background-color: blueviolet;
+            align-items: center;
+            justify-content: center;
+        }
+        #box1111 { 
+            background-color: aquamarine;
+            border: 2px solid black;
+            width:15vw;
+        }  
+        #box2222 { 
+            background-color: rgb(175, 203, 255);
+            border: 2px solid black;
+            width:15vw;
+        }  
+        #box3333 { 
+            background-color: rgb(255, 246, 174);
+            border: 2px solid black;
+            width:15vw;
+        }  
+        #box4444 { 
+            background-color: rgb(255, 209, 238);
+            border: 2px solid black;
+            width:15vw;
+        } 
+
+        .container {
+            display : flex;
+        }
+        #box5 { 
+            background-color: aquamarine;
+            border: 2px solid black;
+            width:25vw;
+            order: 3;
+        }  
+        #box6 { 
+            background-color: rgb(175, 203, 255);
+            border: 2px solid black;
+            width:25vw;
+            order: 2;
+        }  
+        #box7 { 
+            background-color: rgb(255, 246, 174);
+            border: 2px solid black;
+            width:25vw;
+            order: 2;
+        }  
+        #box8 { 
+            background-color: rgb(255, 209, 238);
+            border: 2px solid black;
+            width:25vw;
+            order:0;
+        } 
+
+        .container1 {
+            display : flex;
+            height: 100px;
+            background-color: brown;
+        }
+        #box55 { 
+            background-color: aquamarine;
+            border: 2px solid black;
+            width:15vw;
+            align-self: center;
+        }  
+        #box66 { 
+            background-color: rgb(175, 203, 255);
+            border: 2px solid black;
+            width:15vw;
+        }  
+        #box77 { 
+            background-color: rgb(255, 246, 174);
+            border: 2px solid black;
+            width:15vw;
+            align-self: center;
+        }  
+        #box88 { 
+            background-color: rgb(255, 209, 238);
+            border: 2px solid black;
+            width:15vw;
+        }
+
+        .container11 {
+            display : flex;
+            height: 100px;
+            background-color: brown;
+        }
+        #box555 { 
+            background-color: aquamarine;
+            border: 2px solid black;
+            width:15vw;
+        }  
+        #box666 { 
+            background-color: rgb(175, 203, 255);
+            border: 2px solid black;
+            width:15vw;
+        }  
+        #box777 { 
+            background-color: rgb(255, 246, 174);
+            border: 2px solid black;
+            width:15vw;
+            flex-grow: 3;
+        }  
+        #box888 { 
+            background-color: rgb(255, 209, 238);
+            border: 2px solid black;
+            width:15vw;
+        }
+    </style>
+</head>
+<body>
+    <p>Welcome back to another chapter, as promised, we are going to learn about various properties of flexbox and see how are they working.</p>
+    <p>Let's quickly make our boxes then....</p>
+    <div class="contain">
+        <div id="box1"><p>Box1</p></div>
+        <div id="box2"><p>Box2</p></div>
+        <div id="box3"><p>Box3</p></div>
+        <div id="box4"><p>Box4</p></div>
+    </div>
+    <p>Alright, so these four boxes will be our main things today. By using them, we will be learning about flexbox more!</p>
+    <hr>
+    <h1>Parent Properties</h1>
+    <h2>flexbox-direction</h2>
+    <div class="contain1">
+        <div id="box11"><p>Box1</p></div>
+        <div id="box22"><p>Box2</p></div>
+        <div id="box33"><p>Box3</p></div>
+        <div id="box44"><p>Box4</p></div>
+    </div>
+    <p>This is the 'flex-direction : column' property. Like this way you can use 'column-reverse' and 'row-reverse'. As their name suggests, the list will be from last to first if you just add 'reverse'.</p>
+    <h2>flex-wrap</h2>
+    <div class="contain11">
+        <div id="box111"><p>Box1</p></div>
+        <div id="box222"><p>Box2</p></div>
+        <div id="box333"><p>Box3</p></div>
+        <div id="box444"><p>Box4</p></div>
+    </div>
+    <p>Now, try to zoom in or zoom out, you will see a difference between this group of box and the first group of box. Look closely, when you zoom it in, the Box4 goes into next line unlike the first group of boxes, in which the Box4 still fits the screen, no matter how much we zoom in or zoom out. By default, the value is 'nowrap'</p>
+    <h2>align-items/justify-content</h2>
+    <div class="contain111">
+        <div id="box1111"><p>Box1</p></div>
+        <div id="box2222"><p>Box2</p></div>
+        <div id="box3333"><p>Box3</p></div>
+        <div id="box4444"><p>Box4</p></div>
+    </div>
+    <p>As told earlier, justify-content and align-items are used for y-axis and x-axis respectively. By using that, we set the property to 'center'.</p>
+    <h1>Children Properties</h1>
+    <h2>order</h2>
+    </div>
+    <div class="container">
+        <div id="box5"><p>Box1</p></div>
+        <div id="box6"><p>Box2</p></div>
+        <div id="box7"><p>Box3</p></div>
+        <div id="box8"><p>Box4</p></div>
+    </div>
+    <p>As you can see that the order of the boxes have been changed by using the 'order' in every flex item.</p>
+    <h2>align-self</h2>
+    <div class="container1">
+        <div id="box55"><p>Box1</p></div>
+        <div id="box66"><p>Box2</p></div>
+        <div id="box77"><p>Box3</p></div>
+        <div id="box88"><p>Box4</p></div>
+    </div>
+    <p>Now look, we can thus, make particular box in the center of it's y-axis, using this property in CSS.</p>
+    <h2>flex-grow</h2>
+    <div class="container11">
+        <div id="box555"><p>Box1</p></div>
+        <div id="box666"><p>Box2</p></div>
+        <div id="box777"><p>Box3</p></div>
+        <div id="box888"><p>Box4</p></div>
+    </div>
+    <p>We applied 'flex-grow' property in Box3 and look how it got bigger width than the other boxes. Same is with flex-shrink, so I don't think it's required to perform example here. You can test it out by yourself! Hence, the chapter completes and I hope you understood what each property does to an element/container. Just remember, don't use parent properties in children elements because it won't take any effect on them.</p>
+</html>

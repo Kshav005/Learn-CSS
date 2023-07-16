@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11</title>
+
+    <style>
+        p {
+            font-size: 0.7cm;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: darkblue;
+        }
+        .box {
+            font-size: 1cm;
+            display: flex;
+            background-color: darkred;
+            color: aliceblue;
+            height: 200px;
+            width: 300px;
+            align-items: center;
+            justify-content: center;
+        }
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+            background-color: aqua;
+            border: 2px dashed black;
+            text-align: center;
+            font-size: 1cm;
+        }
+        #a1 {
+            transform: rotate(0.5turn);
+        }
+        #a2 {
+            transform: translate(60px, 20px);
+        }
+        #a3 {
+            transform: translate(60px, 20px);
+        }
+        #b1 {
+            transform: translate(135px, 10px);
+            border: 2px solid black;
+            width: 150px;
+            text-align: center;
+        }
+        #a3 {
+            transform:scaleX(3);
+        }
+        #a4 {
+            transform:scaleY(2);
+        }
+        #a5 {
+            transform:scale(2,2);
+        }
+
+    </style>
+</head>
+<body>
+    <p> Transform is pretty popular amongst web devs as it helps in animation of various elements. We can move or scale a particular element just by using properties of CSS. So let's check it out, how everything works.</p>
+    <p>In this chapter, we will be only learning about the transform property, which helps in 2D or 3D transformation.</p>
+    
+    <div class="box">Box</div>
+    <p>So, here's our box today. We will testing out all the properties on it today!</p>
+    <h2>Rotate</h2>
+    <p>We can rotate our box using 'transform : rotate(xturn)' where 'x' is some decimal by which we want that element to turn. 1 is '360 degree'. So we are going to turn this box to 180 degrees by using the value 0.5. Henceforth, the property goes as 'transform : rotate(0.5turn)'</p>
+    <div class="box" id="a1">Box</div>
+    <h2>Translate</h2>
+    <p>Translate is nothing but placing an element to a certain position. Use 'transform : translate(x, y)' where x is the place in x-axis while y is the place value in y-axis.</p>
+    <div class="box" id="a2">Box</div>
+    <p id="b1">60px, 20px</p>
+    <h2>Scalex/Scaley</h2>
+    <p>It zooms the element into particular axis.</p>
+    <div class="box" id="a3">Box in scaleX</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="box" id="a4">Box in scaleY</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="box" id="a5">Box in both axis</div>
+    <h2>Matrix</h2>
+    <p>Matrix is really simple, it's a shorthand property which goes like 'matrix: a, b, c, d, tx, ty' where a is 'scalex', b is 'skewy', c is 'skewx', d is 'scaley', tx is 'translatex' and ty is 'translatey', containing different values. Try going into the documents of CSS to know about skew, by this you will be able to practice your reading documentation skills too!</p>
+</body>
+</html>

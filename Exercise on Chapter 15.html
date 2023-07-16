@@ -1,0 +1,37 @@
+<!-- In this exercise, create a webpage which is yellow in starting, becomes green, then blue and then purple at different widths. -->
+<!-- If you weren't able to perform the exercise or find it hard then the solution is given below. Keep on practicing! -->
+
+
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+    <style>
+        body { 
+            background-color: yellow;
+        }
+
+        @media screen and (max-width:400px) {
+            body {
+                background-color: green;
+            }
+        }
+        @media screen and (min-width: 400px) and (max-width:800px) {
+            body {
+                background-color: blue;
+            }
+        }
+        @media screen and (min-width:800px) and (max-width:1200px) {
+            body {
+                background-color: purple;
+            } 
+        }
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

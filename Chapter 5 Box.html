@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+p {
+    font-size: 0.7cm;
+}
+#a2 {
+    width: 400px;
+}
+#a3 {
+    margin: 50px;
+    padding: 30px;
+    border:5px solid green
+}
+#a4 {
+    border-width: 4px;
+    border-color: rgb(153, 0, 255);
+    border-style: dotted;
+}
+#a5 {
+    border-width: 3px;
+    border-color: firebrick;
+    border-style: dashed dotted solid none; 
+}
+#a6 {
+    border-width: 2px;
+    border-color: darkorange;
+    border-style: double;
+    border-radius: 5px;
+}
+
+</style>
+    <title>Chapter 5</title>
+</head>
+<body>
+    <p id="a1">CSS treats every element as box. For example, see the image below and you will find out, what I mean.</p>
+    <img src="img1.jpg">
+    <p>Does that image seems familiar? Yes, that's the kind of box you see while inspecting in Google Chrome browser. After content, comes Padding, then Border and then the Margin.</p>
+    <hr>
+    <p id="a2">You can set a width and a height of your content. Suppose you want your content to stick at a and not cover the whole webpage, then using width feature is really useful. Just like this, the image can be shown in the right side when the content is on the left.</p> <br>
+    <p>Setting a margin and padding for the paragraph below</p>
+    <p id="a3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo fuga nihil impedit laudantium itaque nam ipsum. Adipisci ipsa, expedita quos velit ad maiores laudantium fuga. Consectetur iure accusantium quibusdam voluptas nostrum in, quod adipisci, corporis saepe dicta nisi eum vel nulla ullam culpa laboriosam officia veritatis, earum veniam ipsam unde. Sit in ab, iure asperiores excepturi totam, ex repudiandae, quam deleniti nam odio odit ipsum possimus recusandae impedit. Porro quod blanditiis asperiores numquam velit assumenda, cupiditate ipsam inventore, aliquid at accusamus doloribus impedit totam ducimus voluptatem. Voluptatibus, natus animi! Minus, repellendus possimus. Blanditiis ipsa quasi ea inventore repudiandae voluptates laborum?</p>
+
+    <p id="a4"> We can also set border values individually. For example I want a border color and border width differently, then I will write the CSS code as. (Look at the css code mentioned a4)</p>
+    <p id="a5">You can also set 4 different borders for different sides. It goes 'border-style : top, right, bottom, left'</p>
+    <p id="a6">We can also make borders rounded by using 'border-radius'</p>
+
+<hr>
+<h2>MARGIN COLLAPS</h2>
+<p> So, when you define two different margins for elements then the margin is taken of the element which has bigger margin defined</p>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 14</title>
+    <style>
+        h2 {
+            font-size: 0.7cm; 
+            border: 2px dashed green;
+            background-color: greenyellow;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        p {
+            font-size: 0.6cm;
+            color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #note {
+            background-color: antiquewhite;
+        }
+
+        .container {
+            background-color: aquamarine;
+            border: 2px solid black;
+            font-size: 0.7cm;
+            width:200px;
+        }
+
+        .container1 {
+            background-color: aquamarine;
+            border: 2px solid black;
+            font-size: 0.7cm;
+            width:200px;
+            display: grid;
+        }
+        #box {
+            border: 2px solid black;
+        }
+        .container11 {
+            background-color: aquamarine;
+            font-size: 0.7cm;
+            width:200px;
+            display: grid;
+            row-gap: 10px;
+        }
+        .container111 {
+            background-color: aquamarine;
+            font-size: 0.7cm;
+            width:200px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .container1111 {
+            background-color: aquamarine;
+            font-size: 0.7cm;
+            display: grid;
+            grid-template-columns: 100px 300px auto;
+        }
+        .container2 {
+            background-color: aquamarine;
+            font-size: 0.7cm;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+        }
+        .container22 {
+            background-color: aquamarine;
+            font-size: 0.7cm;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+        }
+        .a1 {
+            grid-column: 1 / 3; 
+        }
+        .a2 {
+            grid-row: 1 / 3; 
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Grid is an alternate way to create rows and columns. Making a table can be hard using html, but CSS has brought the easiest way in order to perform such acitivities.</p>
+    <p>Suppose we have 4 different boxes.</p>
+    <div class="container">
+        <div id="a1">Box1</div>
+        <div id="a2">Box2</div>
+        <div id="a3">Box3</div>
+        <div id="a4">Box4</div>
+    </div>
+    <p>And now, we will be using 'display:grid' to turn them into a table!</p>
+    <div class="container1">
+        <div id="box">Box1</div>
+        <div id="box">Box2</div>
+        <div id="box">Box3</div>
+        <div id="box">Box4</div>
+    </div>
+    <h2>row-gap/column-gap</h2>
+    <p>Used to set the row/column size depending on the property you are using.</p>
+    <div class="container11">
+        <div id="box">Box1</div>
+        <div id="box">Box2</div>
+        <div id="box">Box3</div>
+        <div id="box">Box4</div>
+    </div>
+    <h2>grid-template-columns</h2>
+    <p>Used to add more columns in a grid. 'grid-template-columns: auto auto auto', will add 3 columns. The number of 'auto' in the property will define the total number of columns. Suppose if you add 5 'auto' in the property then you will be getting 5 columns.</p>
+    <div class="container111">
+        <div id="box">Box1</div>
+        <div id="box">Box2</div>
+        <div id="box">Box3</div>
+        <div id="box">Box4</div>
+    </div>
+    <p>Actually, in place of 'auto', comes a width. CSS asks you about how much width every column should be given. But if you set auto, then it sets the width just same as other columns (divides equally).</p>
+    <div class="container1111">
+        <div id="box">Box1</div>
+        <div id="box">Box2</div>
+        <div id="box">Box3</div>
+        <div id="box">Box4</div>
+    </div>
+    <h2>grid-gap</h2>
+    <p>A shorthand property, 'grid-gap: row column'. If you enter only one value, then it would set row and column both to that value.</p>
+    <hr>
+    <p id="note">'align-items' and 'justify-content' can also be used in grids. Used to set an alignment in both x and y-axis.</p> 
+    <hr>
+    <h2>Children Properties</h2>
+      <p>I. grid-column : Used to set a column width according to another column.</p>
+      <p>To show this as an example, I want to set the column length of the Box1 till Box3. So, it means that the length of the Box1 will so large that it would cover the space of Box1 and Box2 altogether. So the command will go as 'grid-column : 1/3' which means I want the first column to stretch and stop before 3rd box. This means, we will be having 2 columns in the first row and then 3 columns as usual.</p>
+      <br>
+        <p>~BEFORE</p>
+      <div class="container2">
+        <div id="box">Box1</div>
+        <div id="box">Box2</div>
+        <div id="box">Box3</div>
+        <div id="box">Box4</div>
+        <div id="box">Box5</div>
+        <div id="box">Box6</div>
+        <div id="box">Box7</div>
+        <div id="box">Box8</div>
+        <div id="box">Box9</div>
+        <div id="box">Box10</div>
+        <div id="box">Box11</div>
+        <div id="box">Box12</div>
+    </div>
+    <br>
+    <br>
+    <p>~AFTER</p>
+    <div class="container22">
+        <div class="a1" id="box">Box1</div>
+        <div id="box">Box2</div>
+        <div id="box">Box3</div>
+        <div id="box">Box4</div>
+        <div id="box">Box5</div>
+        <div id="box">Box6</div>
+        <div id="box">Box7</div>
+        <div id="box">Box8</div>
+        <div id="box">Box9</div>
+        <div id="box">Box10</div>
+        <div id="box">Box11</div>
+        <div id="box">Box12</div>
+    </div>
+    <h2>grid-row</h2>
+    <p>Same as 'grid-column' but instead it applies on row..</p>
+    <div class="container22">
+        <div class="a2" id="box">Box1</div>
+        <div id="box">Box2</div>
+        <div id="box">Box3</div>
+        <div id="box">Box4</div>
+        <div id="box">Box5</div>
+        <div id="box">Box6</div>
+        <div id="box">Box7</div>
+        <div id="box">Box8</div>
+        <div id="box">Box9</div>
+        <div id="box">Box10</div>
+        <div id="box">Box11</div>
+        <div id="box">Box12</div>
+    </div>
+    <p>That's all for his chapter, I hope you loved this chapter as it explains and helps you to create a table rather, in an easy way.</p>
+</body>
+</html>

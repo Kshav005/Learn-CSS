@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chapter 8</title>
+    <style>
+       p {
+        font-size: 0.7cm;
+       }
+        h2 {
+          background-color: antiquewhite;
+          text-align: center;
+          font-family: 'Georgia', 'Times New Roman';
+        }
+        #contain {
+          background-color: coral;
+          font-style: italic;
+          font-size: 20px;
+          border: 3px solid rgb(78, 0, 111);
+          color: rgb(92, 100, 2);
+          width: 50vw;
+        }
+        #place {
+          border: 5px solid blue;
+          background-color: darkred;
+          color: rgb(255, 255, 255);
+          font-size: 20px;
+          height: 50vh;
+        }
+        #b1 {
+          border : 4px solid greenyellow;
+        }
+
+    </style>
+  </head>
+  <body>
+    <p>
+      In this chapter we are going to talk about the problems faced when a
+      developer uses size or position in px (pixels).
+    </p>
+    <br />
+    <p>
+      The drawback of px measurement is that it's not relative, which means the
+      size will be same in mobile and PC both. Hence, in PC, it would be normal
+      size but if you look at the webpage from the mobile then it will appear
+      too big for the screen.
+    </p>
+    <p>
+      In that case, we use some other relative measurements, which fix
+      themselves to either viewing devices or the parent elements.
+    </p>
+    <hr />
+    <ul>
+      <li>em - unit relative to the parent element's font size.</li>
+      <li>rem - unit relative to the root (browser) font size.</li>
+      <li>vw - unit relative to n% viewport width.</li>
+      <li>vh - unit relative to n% viewport height.</li>
+    </ul>
+    <hr>
+    <h2>em</h2>
+    <p>If we use this measurement, then the font size becomes *n to the parent element's font size, where n is equal to the number you have mentioned. For eg, '5em' will make the font size *5 of the parent element's size. </p>
+    <h2>rem</h2>
+    <p>This works the same as 'em' but instead of parent element, it uses the default value of the browser. Same usage just like the 'em' measurement.</p>
+    <h2>vw</h2>
+    <p>It will display n% of the viewport width. Viewport is nothing but the size of the screen. So basically, when you type '50vw', the text will be covering 50% of the width of computer/tab/mobile depending on the size.</p>
+    <h2>vh</h2>
+    <p>Works same as 'vw' but instead, it takes the height of the viewport and not the width.</p>
+    <br>
+    <hr>
+    <p>Let's try some of these!</p>
+    <div id="contain">
+      <p>Using the vw (viewport width)</p>
+    </div>
+    <div id="place">Using the vh (viewport height)</div>
+    <hr>
+    <h2>Min/Max-Height</h2>
+    <p>The 'min-height' in CSS is used to set a minimum height for an element. If the height of that element is smaller than minimum height than the element will be set to that minimum height.</p>
+    <h2>Min/Max-Width</h2>
+    <p>Works similar like above, but instead of height, we use width here.</p>
+    <hr>
+    <h2>Position Property</h2>
+    <p>There are ways to manipulate the position of an element.</p>
+    <ol id="b1">
+      <li>static : The default position, in which top/bottom/left/right makes no effect.</li>
+      <br>
+      <li>relative : The top/bottom/left/right will work perfectly.</li>
+      <br>
+      <li>absolute : This element is positioned according to the first non-static element. Also, top/bottom/left/right attribute works as usual.</li>
+      <br>
+      
+      <li>fixed : Same as absolute but the element is positioned according to browse window</li>
+      <br>
+      <li>sticky : The element is positioned according to the user's scroll.</li>
+    </ol>
+    <hr>
+    <h2>Z-Index</h2>
+    <p>It is a simple property which defines the layer of an element. Suppose you want one of your element to be top of another, then make use the 'z-index:1'. By default, the z-index of all elements is 0.</p>
+  </body>
+</html>

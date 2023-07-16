@@ -1,0 +1,72 @@
+<!-- We have seen some of the color properties in previous chapters but that doesn't mean that you have learnt everything about it, isn't it? So here in this chapter, we are going to discuss about the color and background color property to understand better, how to use gradients in HTML! -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    p {
+        font-size: 0.7cm;
+    }
+    #a1 {
+        color: red;
+    }
+    #a2 { 
+        color: blue;
+        background-color: pink;
+    }
+    #a3 {
+        background-color: #07FFA9;
+        color : #029D96
+    }
+    #a4 {
+        color: rgb(240, 128, 128);
+        background-color: rgb(0, 0, 102 );
+    }
+    #a5 { 
+        color: hsl(100, 100%, 70%);
+        background-color: hsl(124, 55%, 24%);
+    }
+    #a6 {
+        color: rgba(141, 0, 255, 0.75);
+        background-color: rgba(255, 0, 199, 0.1);
+    }
+    #a7 {
+        background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201015/pngtree-white-polygonal-mosaic-triangular-background-abstract-light-gray-background-low-poly-image_418752.jpg);
+    }
+    #a8 {
+        background-color: rgba(255, 238, 141, 0.81);
+    }
+    #a9 { 
+        background-color: darkseagreen;
+        border: 3px solid royalblue;
+    }
+   </style>
+    <title>Chapter 4</title>
+</head>
+<body>
+    <p id="a1">This is a paragraph and it's color will be red.
+    </p>
+    <p id="a2">This paragraph will have pink backgroud color and blue font color.</p>
+    <p id="a3">This paragraph will have HTML color code! It means we can use HTML color codes (HEX code) along with name of colors. Hope you know about color codes, like - #343F32, #FFFFFF, #832A0H</p>
+    <p id="a4">Did you know we can also use the rgb() color combinations to change colors?</p>
+    <p id="a5">There is another way to specify colors using HSL (Hue, Saturation, Lightness) values </p>
+    <p id="a6">One more thing, there is thing known as RGBA and HSLA. The 'A' stands for alpha. Though, it's not used by beginners much. Alpha defines the opacity of the color (from 0.0 to 1.0). That's all.</p>
+    <hr>
+    <p> We can also use an image as background.</p> 
+    <p id="a7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reprehenderit quos amet atque maxime libero inventore quaerat, magni esse ipsam odio, facere doloribus ipsa repellendus voluptatum vitae molestias asperiores doloremque distinctio quas exercitationem obcaecati soluta eaque. Tempora, quidem! Quaerat iste aliquam saepe eveniet dignissimos, placeat accusantium deleniti aut recusandae animi!</p>
+    <p>We can also use 'background-repeat' property in CSS to repeat a background in a x/y (horizontal/vertical) direction. Just use 'body' selector in CSS and put that any image as the background.</p>
+    <br>
+    <p>There is another property called 'background-size' property which takes cover/contain/auto/width as value.</p>
+    <ul id="a8">
+        <li>cover = fits and no empty space remains, without destroying the aspect ratio</li>
+        <li>contain = fits and image is fully visible</li>
+        <li>auto = Display in original size</li>
+        <li>width = Set width of the image and the height will be automatically set according to the aspect ratio</li>
+    </ul>
+    <hr>
+    <p id="a9">There is a property called border which initiates a border aroung the background color box. Just like in this. It is written as 'border : border_weight border_type border_color'. The border_weight defines the thickness of the border in px (for eg- 5px), border_type is used to define whether the border should be dashed or solid line and border_color is the simple border color as usual. </p>
+    <p>You can also define 'backgroud-position' to set whether the background should be at top, bottom, left or right, center, at % of the total width, top center, bottom center, etc</p>
+    <p>There is also another property called 'background-attachement', which makes the image scrollable or non-scrollable. Non-scrollable means that the image will be fixed if scrolled.</p>
+</body>
+</html>

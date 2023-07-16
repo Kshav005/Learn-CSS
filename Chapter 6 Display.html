@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p {
+            font-size: 0.7cm;
+        }
+        .box1 {
+            width: 600px;
+            border:3px solid;
+            padding: 4px;
+            background-color: honeydew;
+        }
+        .box2 {
+            width: 600px;
+            border:5px double rgb(0, 47, 255);
+            padding:5px;
+            margin-top:10px;
+            background-color: lightcoral;
+        }
+        #inline {
+            margin-top: 20px;
+            border: 2px solid;
+            display: inline;
+            background-color: aquamarine;
+        }
+        #inline2 {
+            border:2px solid red;
+            display: inline;
+            background-color: burlywood;
+        }
+        #block {
+            border:2px solid;
+            display: block;
+            margin-top:30px;
+        }
+        #none {
+            display: none;
+        }
+        #hide {
+            width: 100px;
+            border : 2px solid;
+            visibility: hidden;
+        }
+    </style>
+    <title>Chapter 6</title>
+</head>
+<body>
+    <p>There is another property called display in CSS. It helps you to beautifully place the boxes in the webpage.</p>
+
+    <div class="box1">
+        <p>There is a boy, who likes to play with his pet kitten called Meow Burger. The kitten is very beautiful indeed.</p>
+    </div>
+    <div class="box2">
+        <p>There is a girl who has a pet dog and it's name is Juno. The name is little weird but it's totally okay for the girl.</p>
+    </div>
+    <p id="inline">'display : inline' takes up space required by the content. Now you can't change the top and bottom margin/top and bottom padding/width/height. While the left and right padding/margin works good.</p>
+    <p id="inline2">This sentence will side by side with the inline box. Therefore, taking up the space it needs.</p>
+    <p id="block">'display : block' is not a new thing, but it treats the element as block. The 'div' is block by default. Takes full space available and next element comes in the new line. You can change the padding and the margin as usual.</p>
+    <p id="blockinline">'display : inline-block' is another property in which the item is treated as inline and you can change the width, height of it. If the next element to it has 'display : inline' then both will be side by side.</p>
+    <p>Well there is one more thing called 'display:none'. It just removes the element. For example, if you look at the code, there is an element but if you check it in the webpage then you won't be able to find such element below.</p>
+    <p id="none">I am invisible, ain't I? </p>
+    <br>
+    <p id="hide">I am also invisible but I am taking the space that I should have taken if I were visible!</p>
+    <p> We have this one called as 'visibility : hidden', as you can see, the above element is invisible but it's taking its space as well. That's why this paragraph is shifted from its place if you observe.</p>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!-- In this exercise, you need to create a progress bar like youtube. If you reload or open any new webpage in youtube, then you must have seen a red progress bar at the top of the page, which goes in a blink of an eye. Try to create such animation! -->
+<!-- And then use an image, create an animation where it rotates continuously. -->
+<!-- Below is the solution, but make sure you try it yourself first! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes Load {
+            0% {width: 0vw;}
+            40% {width: 40vw;}
+            99% {width: 100vw;}
+            100% {width: 0vw;}
+        }
+        .bar {
+            width: 0vw;
+            height:2px;
+            background-color: red;
+            animation-name: Load;
+            animation-iteration-count: 1;
+            animation-duration: 0.3s;
+            position: fixed;
+        }
+
+        .container {
+            display: flex;
+            width: 100vw;
+            height:50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes Rotation {
+            100%{transform: rotate(1turn);}
+        }
+        img {
+            animation-name: Rotation;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="bar"></div>
+    <div class="container">
+        <img src="img2.jpg" alt="image">
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9</title>
+
+    <style>
+        p {
+            font-size: 0.7cm;
+        }
+        h1 {
+            background-color: beige;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        #a2 {
+            width: 200px;
+            height: 100px;
+            background-color: cadetblue;
+        }
+        #a3 {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(242, 177, 251);
+            float: right;
+        }
+        #a4 {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(196, 249, 255);
+            float: right;
+        }
+        #a5 {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(255, 187, 214);
+            float: right;
+        }
+        #a6 {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(170, 255, 164);
+            float: right;
+        }
+        #a7 {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(199, 199, 255);
+            float: right;
+            clear: right;
+        }
+        .navbar { 
+            display: flex;
+            font-size: 0.5cm;
+            border : 2px solid black;
+        }
+        #a8 {
+            background-color: aquamarine;
+            width: 25vw;
+        }
+        #a9 {
+            background-color: rgb(201, 255, 200);
+            width: 25vw;
+        }
+        #a10 {
+            background-color: rgb(247, 192, 255);
+            width: 25vw;
+        }
+        #a11 {
+            background-color: rgb(197, 184, 255);
+            width: 25vw;
+        }
+        #b1 { 
+            list-style-type: upper-roman;
+        }
+        ul {
+            font-size: 0.6cm;
+            border : 2px dashed blue;
+            font-family:  'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p id="a1">In this chapter, we are going to learn about flexbox, clear and float property which is mostly used by all web devs during design of websites. So let's begin!</p>
+    <hr>
+    <h1>Float Property</h1>
+    <p>Suppose we create 2 boxes of different colors, where one box has the float property.</p>
+    <div id="a2"><p>Hello there!</p></div>
+    <div id="a3"><p>Hi there, stranger!</p></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>So if you see, we get to know that the pink box is on the right hand side when we used the 'float : right' property in CSS. But what if we make two more boxes and give them both the float property?</p>
+    <br>
+    <div id="a4"><p>Another box.</p></div>
+    <div id="a5"><p>One more box.</p></div>
+    <p>You see, when we did the thing, the boxes are automatically place against each other on the right hand side. But that's not it. If you look, then this text that you are reading, is also adjusted to those boxes.</p>
+    <br>
+    <p>That's how float works, you can use it in your website if you like to have some content on certain place without wasting space.</p>
+    <hr>
+    <h1>Clear Property</h1>
+    <p>If you wonder what's the clear property in CSS, then it's a way to clear the float. It specifies what elements can float beside a given element.</p>
+    <p>This property tells not to make any element float in a particular direction. Suppose we make 2 boxes, and we want that there should be no box floating on the right side of this box.</p>
+    <div id="a6"><p>I am Box 1</p></div>
+    <div id="a7"><p>I am Box 2</p></div>
+    <p>Now if you see, the space has been given to that box 2, and this paragraph is being written below it, at the left side of box 1! You can look that the boxes are not side by side as before.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h1>Flexbox Property</h1>
+    <p>To make things really simple (positions, alignments etc), Flexbox was introduced. It helps in creating navbars and is able to perform many more functions too! It is applied using 'display : flex' in CSS.</p>
+    <p>Let's try flexbox now!</p>
+    <div class="navbar">
+        <div id="a8">Home</div>
+        <div id="a9">Menu</div>
+        <div id="a10">Contact</div>
+        <div id="a11">About</div>
+    </div>
+    <br>
+    <p>There are some terms are important to know, about flexbox.</p>
+    <br>
+    <p>Property for Flexbox container (parent element, for e.g. - I used 'navbar' as the parent container)</p>
+    <ul>
+        <li>flex-direction : Defines the direction in which all the items are laid. Can be row, column, row-reverse, column-reverse. Row is by default.</li>
+        <li>flex-wrap : You can wrap items using this property. Can be wrap, nowrap, wrapreverse etc. It is used to use the space efficiently, when the viewport is small or the user is making the window small.</li>
+        <li>align-items : It defines alignment along the y axis.</li>
+        <li>justify-content : Defines the alignment along the x axis.</li>
+        <li>align-content : Aligns a flex container's lines when there is extra space in y axis. Used alternatively if you don't want to give spaces for flex-wrap, when the user tries to make the window smaller.</li>
+    </ul>
+    <br>
+    <p>Properties for Flexbox items (children elements, for e.g. - I used 'home', 'about', etc as flexbox items)</p>
+    <ul id="b1">
+        <li>order : Controls the order in which the flexbox items are displayed in the container. By default the order is 0.</li>
+        <li>align-self : Allows to align a certain item, overriding the previous container alignments.</li>
+        <li>flex-grow : Allows the flex item to grow. It increases the size of the item box. </li>
+        <li>flex-shrink : Works same as the 'flex-grow' property but the difference is that it allows to shrink.</li>
+    </ul>
+    <hr>
+    <p>In the next chapter, we are going to learn about how all these properties work!</p>
+    
+</body>
+</html>

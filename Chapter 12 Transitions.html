@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12</title>
+    <style>
+        p {
+            font-size: 0.7cm;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(88, 0, 0);
+        }
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+            background-color: rgb(200, 198, 255);
+            border: 2px dashed black;
+            text-align: center;
+            font-size: 1cm;
+        }
+        .box {
+            border: 2px dashed blueviolet;
+            width: 298px;
+            display: inline-block;
+        }
+        #a1:hover{
+            width: 25vw;
+        }
+        #b1:hover{
+            width: 25vw;
+        }
+        #a22 {
+            width: 25vw;
+            transition-property: width;
+            transition-duration: 0.5s;
+        }
+        #b22 {
+            width: 25vw;
+            transition-property: width;
+            transition-duration: 0.5s;
+        }
+        #a22:hover{
+            width: 35vw;
+        }
+        #b22:hover{
+            width: 35vw;
+        }
+        ol {
+            list-style-type:upper-alpha;
+            font-size: 0.7cm;
+        }
+    </style>
+</head>
+<body>
+    <p>In this chapter, we are going to learn about the basics of animations using smooth transitions which can make your webpages, super-duper amazing!</p>
+    <p>We will be using images this time. So, get ready!</p>
+    <div class="box">
+        <img src="img2.jpg" alt="image.jpg_here">
+    </div>
+    <p>Introducing, our image today!</p>
+    <h2>Hover effects</h2>
+    <p>Hover is nothing but when the mouse pointer is on the element. We can do this by 'element id/class:hover{*effects here*}'</p>
+    <p>For example, I want to make the image a little bigger when mouse pointer comes on it.</p>
+    <div class="box" id="a1">
+        <img src="img2.jpg" alt="image.jpg_here" id="b1">
+    </div>
+    <p>As you can see, the image grows in size whenever it detects mouse pointer on it.</p>
+    <h2>Transition property</h2>
+    <p>Suppose we want to make an animation for few seconds. Then we will be adding 'transition-property: x' where x is the property (like width, height, etc) that you want to animate. Then, add 'transition-duration:y' and I don't think that I need to explain what this means. Below is the box, animated!</p>
+    <div class="box" id="a22">
+        <img src="img2.jpg" alt="image.jpg_here" id="b22">
+    </div>
+    <hr>
+    <p>There are properties in transition too!</p>
+    <ol>
+        <li>transition-delay - This is used to delay an animation before starting.</li>
+        <li>transition-timing-function - This one's important and is used to control the speed of animation in between of entry and exit. Suppose you want the animation to be fast in the starting and then gradually slow it down during the end, then this property is the key to that lock.</li>
+        <li>transition - It's a shorthand property which goes like 'transition: tp du ttf td' where tp is 'transition-property', du is 'transition-duration', ttf is 'transition-timing-function' and td is 'transition-delay'.</li>
+    </ol>
+</body>
+</html>

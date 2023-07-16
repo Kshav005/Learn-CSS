@@ -1,0 +1,109 @@
+<!-- In the exercise, you need to use the grid system to create a table in which 4 subject marks are given of 4 students. The heading of the table should go as 'Class Performance'. Also, create columns to display the serial number, name and subject marks of 4 different subjects.  -->
+<!-- If you were unable to solve such question then we got you covered. You can look at the answer below! But try to learn and create all by yourself as practice makes a man perfect! Good luck! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+    <style>
+        .table {
+            font-size: 0.6cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular';
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+        }
+        .box {
+            border : 2px solid black;
+        }
+        #heading {
+            grid-column: 1/7;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: purple;
+            background-color: antiquewhite;
+        }
+        #box1 {
+            text-align: center;
+        }
+        #box2 {
+            text-align: center;
+            background-color: rgb(179, 254, 255);
+        }
+        #box3 {
+            background-color: rgb(255, 229, 177);
+            text-align: center;
+        }
+        #box4 {
+            background-color: rgb(234, 186, 255);
+            text-align: center;
+        }
+        #box5 {
+            background-color: rgb(255, 194, 194);
+            text-align: center;
+        }
+        #box6 {
+            background-color: rgb(172, 255, 234);
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="box" id="heading">Class Performance</div>
+        <div class="box" id="box1">Serial No.</div>
+        <div class="box" id="box1"> Name</div>
+        <div class="box" id="box1"> English</div>
+        <div class="box" id="box1"> Maths</div>
+        <div class="box" id="box1"> Computers</div>
+        <div class="box" id="box1"> Science</div>
+        <div class="box" id="box2"> 1</div>
+        <div class="box" id="box2"> Michael</div>
+        <div class="box" id="box2"> 23</div>
+        <div class="box" id="box2"> 98</div>
+        <div class="box" id="box2"> 24</div>
+        <div class="box" id="box2"> 76</div>
+        <div class="box" id="box3"> 2</div>
+        <div class="box" id="box3"> John</div>
+        <div class="box" id="box3"> 35</div>
+        <div class="box" id="box3"> 99</div>
+        <div class="box" id="box3"> 100</div>
+        <div class="box" id="box3"> 01</div>
+        <div class="box" id="box4"> 3</div>
+        <div class="box" id="box4"> Nina</div>
+        <div class="box" id="box4"> 100</div>
+        <div class="box" id="box4"> 01</div>
+        <div class="box" id="box4"> 02</div>
+        <div class="box" id="box4"> 03</div>
+        <div class="box" id="box5"> 100</div>
+        <div class="box" id="box5"> 4</div>
+        <div class="box" id="box5"> Brad</div>
+        <div class="box" id="box5"> 90</div>
+        <div class="box" id="box5"> 91</div>
+        <div class="box" id="box5"> 02</div>
+        <div class="box" id="box6"> 100</div>
+        <div class="box" id="box6"> Tom</div>
+        <div class="box" id="box6"> 100</div>
+        <div class="box" id="box6"> 01</div>
+        <div class="box" id="box6"> 99</div>
+        <div class="box" id="box6"> 99</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!-- Create a navbar which sticks at one place, no matter where we scroll and a box whose width is equal to 20% of the total height of device and height is equal to 10% total width of the device. -->
+
+<!-- If you couldn't solve, then don't worry, below is the answer key given for your help. -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<head>
+    <title>Exercise 3</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        li {
+            display : inline;
+        }
+        header {
+            background-color: blanchedalmond;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            word-spacing: 2cm;
+            font-size: 25px;
+            height: 50px;
+            text-align: center;
+            position : sticky;
+            top: 0;
+            z-index: 1;
+        }
+        p {
+            font-size: 20px;
+            font-style: italic;
+            font-family: monospace;
+            font-weight: 900;
+        }
+        #a1 {
+            background-color: darkkhaki;
+            position: relative;
+            top: 10px;
+            height: 950px;
+        }
+        #a2 {
+            background-color: aquamarine;
+            height: 10vw;
+            width: 20vw;
+            z-index: 2;
+            position: relative;
+            top: 20px;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="unor">
+                <li>Home</li>
+                <li >About</li>
+                <li>Help</li>
+                <li>Contacts</li>
+                <li>Link</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="a1">
+        <p>This is an element.</p>
+    </div>
+    <div id="a2">
+        <p>This is the second part of this exercise. The box will be of the size mentioned above.
+        </p>
+        </div>
+    
+</body>
+</html>

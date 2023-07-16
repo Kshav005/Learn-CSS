@@ -1,0 +1,191 @@
+<!-- Let's learn about something regarding fonts! You will be shocked to know that there are various features in CSS regarding controling texts and making them extremely beautiful! -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        
+        h2 {
+            background-color: cornflowerblue;
+            color: rgb(255, 234, 0);
+            text-align: center; 
+        }
+        .hi {
+            border : 3px dashed rgb(99, 219, 255);
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        .hi1 {
+            border : 3px dashed rgb(99, 219, 255);
+            background-color: antiquewhite;
+            text-align: left;
+        }
+        .hi2 {
+            border : 3px dashed rgb(99, 219, 255);
+            background-color: antiquewhite;
+            text-align: right;
+        }
+        .hi3 {
+            border : 3px dashed rgb(99, 219, 255);
+            background-color: antiquewhite;
+            text-align:justify;
+        }
+        .hi4 {
+            border : 3px dashed rgb(99, 219, 255);
+            background-color: antiquewhite;
+            text-align:end;
+        }
+        #a1 {
+            text-decoration: underline;
+        }
+        #a2 {
+            text-decoration:overline;
+        }
+        #a3 {
+            text-decoration:line-through;
+        }
+        #a4 {
+            text-decoration:underline wavy;
+        }
+        #a5 {
+            text-decoration:underline dotted;
+        }
+        #a6 {
+            text-decoration:underline double;
+        }
+        #b1 {
+            text-transform:uppercase;
+        }
+        #b2 {
+            text-transform: lowercase;
+        }
+        #b3 {
+            text-transform:capitalize;
+        }
+        #b4 {
+            line-height: 50px;
+        }
+        #c1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #c2 { 
+            font-size: 8px;
+        }
+        #c3 { 
+            font-size: 13px;
+        }
+        #c4 { 
+            font-size: 20px;
+        }
+        #c5 { 
+            font-size: 40px;
+        }
+        #c7 {
+            font-family: Kanit, sans-serif;
+        }
+        #c8 {
+            line-height: 3;
+        }
+        #c9 {
+            letter-spacing: 0.04cm;
+        }
+        #d1 {
+            font-weight: 300;
+        }
+        #d2 {
+            font-weight: 700;
+        }
+        #d3 {
+            font-weight: 600;
+        }
+        #d4 {
+            font-weight: 900;
+        }
+        #d5 {
+            font-style: italic;
+        }
+        #d6 {
+            font-style:oblique;
+        }
+
+    </style>
+    <title>Chapter 7</title>
+</head>
+<body>
+    <h2>Text Align</h2>
+    <p>To align a text, use 'text-align'!</p>
+    <div class="hi">
+        <p>Hmm, I am at the center of this border</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis aperiam, at magnam officiis odio doloribus optio sint illo, ut aut earum eum neque facilis. Atque illo eum ullam labore hic asperiores dolore at sit!</p>
+    </div>
+    <div class="hi3">
+        <p>Hmm, I am at justified position of this border.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ex temporibus ipsa ea voluptate doloremque, at unde, asperiores quaerat deleniti voluptas obcaecati, architecto maxime sapiente aliquam a vitae nisi culpa ab cupiditate itaque sit.</p>
+    </div>
+    <div class="hi1">
+        <p>Hmm, I am at the left of this border and it is default</p>
+    </div>
+    <div class="hi2">
+        <p>Hmm, I am at the right of this border</p>
+    </div>
+    <div class="hi4">
+        <p>Hmm, I am at the end of this border. Works same as right align.</p>
+    </div>
+    <p>But remember that the 'text-align' doesn't move the div block. It only moves the text within it.  </p>
+    <hr>
+    <h2>Text Decoration</h2>
+    <p>The text decoration is actually the awesome thing. We can use this property by using 'text-decoration'. Below is the representation.</p>
+    <p id="a1">text-decoration : underline</p>
+    <p id="a2">text-decoration : overline</p>
+    <p id="a3">text-decoration : line-through</p>
+    <p id="a4">text-decoration : underline wavy</p>
+    <p id="a5">text-decoration : underline dotted</p>
+    <p id="a6">text-decoration : underline double</p>
+    <hr>
+    <h2>Text Transform</h2>
+    <p>This is not quite special, but it just change the case of the words/sentences. Use this propery by 'text-transform' property!</p>
+    <p id="b1">text-transform : uppercase</p>
+    <p id="b2">TEXT-TRANSFORM : LOWERCASE</p>
+    <p id="b3">text-transform : capitalize</p>
+    <hr>
+    <h2>Line Height</h2>
+    <p id="b4">If you want to define a line height, between every line in paragraph. Just like in this, I defined the line heigh 'line-heigh' : 50px. Thus, this property leaves some space in between of sentence below.</p>
+
+    <hr>
+    <h2>Font Family</h2>
+    <p id="c1">If you want to change the font of a given text, then we define 'font_family : 'font 1' font2 font3'.</p>
+    <p>The web browser will select font2 if font1 doesn't work due to some error and same will be font3, if font2 also doesn't work, otherwise, the browser will use it's default font to display the texts. Also, if your font name has a space in between then write it within single quotes (' ') just like I wrote 'font 1'. You can add even more fonts just like this.</p>
+    <hr>
+    <h2>Font Size</h2>
+    <p>Use 'font-size' to change the size of the text!</p>
+    <p id="c2">This is too small</p>
+    <p id="c3">This is little big than above one</p>
+    <p id="c4">I am more big!</p>
+    <p id="c5">But I am the biggest!!</p>
+    <hr>
+    <h2>New Fonts</h2>
+    <p id="c6">If you want to use new fonts from google which are not installed in your system, then go to Google Fonts on your web browser and select the font you like. There will be a 'link rel' tag, copy that tag and place it in this file under the head tag. Now look below, the new font has been used.</p>
+    <p id="c7">I am the new font. Wow!</p>
+    <hr>
+    <h2>Line and Letter Space</h2>
+    <p id="c8">The difference between spacing can be set using 'line-height' feature in CSS!</p>
+    <p id="c9">The space can be set between each letter using 'letter-spacing'</p>
+    <hr>
+    <h2>Font Weight</h2>
+    <p id="d1">We can also change the boldness!</p>
+    <p id="d2">Like this....</p>
+    <p id="d3">this...</p>
+    <p id="d4">...and this!!</p>
+    <hr>
+    <h2>Font Style</h2>
+    <p id="d5">Now look at this italic text</p>
+    <p id="d6">This is called oblique and you can also define it's degrees of how much it should bend forward.</p>
+    <h2>Font Variant</h2>
+    <p id="d7"></p>
+</body>
+</html>

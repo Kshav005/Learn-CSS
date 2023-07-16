@@ -1,0 +1,42 @@
+<!-- So we learnt how to use CSS, now is the time to learn about some terms.  -->
+
+<!-- What is Property? -->
+<!-- Property is the particular thing we want to change in an element. For example - font, background-color, color, etc -->
+
+<!-- What is Selector? -->
+<!-- Selector is the element you are selecting, i.e. Class and ID. You can also select a tag directly, like h1, p, h2 and others. So, in a simple terms classes, ids and the tags we are changing are known as selectors. We need to use "#" for ID, "." for classes, no prefix for elements and '*' to select all the elements. Below are the examples. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      p {
+        font-size: 0.7cm;
+      }
+      h1 {
+        color: brown;
+      }
+      #a1 {
+        color: blue;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .hi {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-style: italic;
+      }
+      * {
+        padding: 3%;
+      }
+    </style>
+    <!-- padding is the gap between every element -->
+
+    <title>Chapter 3</title>
+  </head>
+  <body>
+    <h1>The Color will change here!</h1>
+    <h1>I will have the same color as above because we both are 'h1'</h1>
+
+    <p class="hi">I will not change because I am in class!</p>
+    <p id="a1">While I am under uniquely specified ID</p>
+  </body>
+</html>

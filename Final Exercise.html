@@ -1,0 +1,668 @@
+<!-- Welcome to the final and the biggest exercise of this series! The exercise has no objective. Instead, you have to create a webpage of your own. Use all the things learn in the chapters, or get inspired by some professional exercise! Just create any thing using your way of understanding, but don't make it responsive because we need to practice our basics. Let's begin and let's see if we were really successful in learning CSS accurately or not! -->
+
+
+
+
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap" rel="stylesheet">
+    <title>The Website</title>
+    <style>
+         body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .navbar {
+            background-color: rgb(18, 18, 44);
+            height: 50px;
+            width: 100vw;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            position: fixed;
+            z-index: 2;
+
+        }
+        button {
+            font-family: 'Kanit', sans-serif;
+            font-size: 0.5cm;
+            text-align: center;
+            width: 120px;
+            height: 35px;
+            border-color: rgb(14, 255, 195);
+            border-radius: 17px;
+            border-style: solid;
+            background-color: black;
+            color: white;
+        }
+        button:hover {
+            background-color: rgb(67, 176, 158);
+            cursor: pointer;
+        }
+        #a1 {
+            margin-right: 15px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        #a2 {
+            margin-right: 15px;
+        }
+        #a3 {
+            margin-right: 15px;
+        }
+        #a4 {
+            margin-right: 15px;
+            width: 180px;
+        }
+        #a5 {
+            margin-right: 15px;
+            width: 160px;
+        }
+        .user {
+            margin-left: 45vw;
+            margin-right: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #usern {
+            font-size: 0.7cm;
+            color: white;
+            margin-right: 12px;
+            text-decoration: none;
+            font-family: 'Passion One', cursive;
+            letter-spacing: 2px;
+
+        }
+        #usern:hover {
+            text-decoration: underline;
+        }
+        #userimg {
+            height: 40px;
+            width: 40px;
+            border-style: solid;
+            border-color: coral;
+            border-radius: 80px;
+        }
+        #wall {
+        height: 40vw;
+        width: 101vw;
+        border-bottom-style: solid;
+        border-width: 15px;
+        border-color: aquamarine;
+        animation-name: rain;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        position: relative;
+        }
+        @keyframes rain {
+            0% {border-color: aqua;}
+            25% {border-color: rgb(235, 105, 255);}
+            50% {border-color: rgb(237, 255, 150);}
+            75% {border-color: rgb(255, 129, 129);}
+            100% {border-color: rgb(255, 211, 170);}
+        }
+        .bro {
+            position: absolute;
+            top: 100px;
+            margin-left: 30px;
+            color: white;
+            width: 50px;
+            font-family: 'Passion One', cursive;
+            font-size: 0vw;
+            letter-spacing: 10px;
+        }
+        @keyframes emphasis {
+            from {font-size: 0vw;}
+            to {font-size: 7.5vw;}
+        }
+
+        .company1 {
+            display:flex;
+            cursor:default;
+        }
+        .company2 {
+            display:flex;
+            cursor: default;
+        }
+        #headings1 {
+            animation-name: emphasis;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 1.2s;
+            animation-fill-mode: forwards;
+        }
+        #headings2 {
+            animation-name: emphasis;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 1.3s;
+            animation-fill-mode: forwards;
+        }
+        #headings3 {
+            animation-name: emphasis;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 1.4s;
+            animation-fill-mode: forwards;
+        }
+        #headings4 {
+            animation-name: emphasis;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 1.5s;
+            animation-fill-mode: forwards;
+        }
+        #headings5 {
+            animation-name: emphasis;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 1.6s;
+            animation-fill-mode: forwards;
+        }
+        #headings6 {
+            animation-name: emphasis;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 1.7s;
+            animation-fill-mode: forwards;
+        }
+        #headings7 {
+            animation-name: emphasis;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 1.8s;
+            animation-fill-mode: forwards;
+        }
+        #headings8 {
+            animation-name: emphasis;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 1.9s;
+            animation-fill-mode: forwards;
+        }
+        #headings9 {
+            animation-name: emphasis;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        #headings10 {
+            animation-name: emphasis;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 2.1s;
+            animation-fill-mode: forwards;
+        }
+        #headings11 {
+            animation-name: emphasis;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 2.2s;
+            animation-fill-mode: forwards;
+        }
+        #headings12 {
+            animation-name: emphasis;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 2.3s;
+            animation-fill-mode: forwards;
+        }
+
+        .query {
+            position: absolute;
+            top: 360px;
+            left: 150px;
+            border-radius: 20px;
+            border-color: chartreuse;
+            font-size: 3vw;
+            height: 100px;
+            font-family: 'Kanit', sans-serif;
+            text-indent: 20px;
+        }
+        @keyframes emphasisimg {
+            from {height: 0px;
+            width: 0px;}
+            to {height:115px;
+            width: 110px}
+        }
+
+        #queryimg {
+            position: absolute;
+            top: 360px;
+            left: 30px;
+            height: 0px;
+            width: 0px;
+            animation-name: emphasisimg;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-delay: 2.7s;
+        }
+
+
+        #logoimg {
+            position: absolute;
+            height: 480px;
+            top: 10px;
+            right: 70px;
+            animation-name: rotation;
+            animation-duration: 5s;
+            animation-delay: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        #logotxt {
+            position: absolute;
+            height: 750px;
+            bottom: 40px;
+            left: 667px;
+        }
+        @keyframes rotation {
+            from {transform: rotate(0turn);}
+            to {transform: rotate(1turn);}
+        }
+
+       h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.3cm;
+            margin-top: 40px;
+            text-align: center;
+            border: 3px dashed palevioletred;
+            background-color: rgb(255, 203, 184);
+            font-family: 'Ysabeau SC', sans-serif;
+            letter-spacing: 3px;
+            word-spacing: 10px;
+            cursor: default;
+        }
+        .monitor {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .computer{
+            height: 150px;
+            border: 4px solid rgb(4, 252, 169);
+            animation-name: unshow;
+            animation-duration: 0.3s;
+        }
+        .computer:hover {
+            animation-name: show;
+            animation-duration: 0.25s;
+            cursor: pointer;
+            height: 170px;
+        }
+        @keyframes show {
+            from {height: 150px;}
+            to {height: 170px}
+        }
+        @keyframes unshow {
+            from {height: 170px;}
+            to {height: 150px}
+        }
+        .mouse {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .cpu {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .keyboard {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #see {
+            font-size:0.7cm;
+            margin-left: 20px;
+        }
+        .review {
+            background-color: rgb(199, 255, 236);
+            height: 78vw;
+            margin-top: 10px;
+            position: relative;
+            border-radius: 10px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: green;
+        }
+        #rating {
+            background-color: rgb(199, 255, 236);
+            border-style: none;
+            text-decoration: underline;
+            text-underline-offset: 15px;
+        }
+        .photo {
+            float: left;
+        }
+        .r1 {
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 60px;
+        }
+        #rimg1 {
+            width: 150px;
+            margin-top: -14px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+        }
+        .reviewtxt {
+            font-size: 0.65cm;
+            text-align: justify;
+            width: 1275px;
+            font-family: 'Courier Prime', monospace;
+        }
+        .author {
+            font-size: 0.5cm;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+        .tablee {
+            margin-left: 4vw;
+        }
+        .follow {
+            margin-top: 130px;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #followup {
+            float:left;
+            font-size: 0.9cm;
+            font-family: 'Passion One', cursive;
+            letter-spacing: 1px;
+        }
+
+        .social {
+            height: 40px; 
+            margin-left: 20px;
+            border-radius: 0px;
+            border-bottom:5px solid rgb(0, 0, 0) ;
+            border-radius: 60px;
+            animation-name: glowicon;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-direction: reverse;
+        }
+        #icon1:hover {
+            cursor: pointer;
+            animation-name: glowicon;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            border-bottom: none;
+
+        }
+        #icon2:hover {
+            cursor: pointer;
+            animation-name: glowicon;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            border-bottom: none;
+        }
+        #icon3:hover {
+            cursor: pointer;
+            animation-name: glowicon;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            border-bottom: none;
+        }
+        #icon4:hover {
+            cursor: pointer;
+            animation-name: glowicon;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            border-bottom: none;
+        }
+        .last {
+            background-color: black;
+            height:20vw;
+            width: 101vw;
+            margin-top: 100px;
+            position: relative;
+            margin-left: -10px;
+        }
+        .wholetable {
+            padding:0px;
+            position: absolute;
+            top: -240px;
+            background-color: transparent;
+            display: grid;
+            color: white;
+            grid-template-rows: 50px 35px 35px 35px 35px 35px 1px;
+            grid-template-columns: 20vw 20vw 20vw 20vw 20vw; 
+            font-size: 1.6vw;
+            position: relative;
+        }
+        .tablee1, .tablee {
+            margin-left: 100px;
+        }
+        .tablee {
+            font-size: 1vw;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular';
+            cursor: pointer;
+        }
+        .tablee:hover {
+            text-decoration: underline;
+        }
+        .tablee1 {
+            font-weight: 700;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            vertical-align: bottom;
+        }
+        #copyright1, #copyright2 {
+            font-size: 1vw;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #copyright2 {
+            border-bottom: 2px solid white;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <button id="a1">Home</button>
+        <button id="a2">Docs</button>
+        <button id="a3">Help</button>
+        <button id="a4">Contact Us</button>
+        <button id="a5">About Us</button>
+        <div class="user">
+            <a href="#" id="usern">UserName123</a>
+            <img src="user.png" alt="icon" id="userimg">
+        </div>
+    </div>
+    <div class="cen">
+        <img src="wall.jpg" alt="img" id="wall">
+        <img src="logo.png" alt="img1" id="logoimg">
+        <img src="logotext.png" alt="img2" id="logotxt">
+        <div class="bro">
+            <div class="company1">
+            <span id="headings1">A</span>
+            <span id="headings2">L</span>
+            <span id="headings3">P</span>
+            <span id="headings4">H</span>
+            <span id="headings5">A</span>
+           </div>
+            <div class="company2">
+            <span id="headings6">L</span>
+            <span id="headings7">A</span>
+            <span id="headings8">P</span>
+            <span id="headings9">T</span>
+            <span id="headings10">O</span>
+            <span id="headings11">P</span>
+            <span id="headings12">S</span>
+           </div>
+        </div>
+        <a href="#"><img id="queryimg" src="search.png" alt="search"></a>
+        <input class="query" type="text" placeholder="What is your query?">
+    </div>
+    <h2>OUR PRODUCTS</h2>
+    <div class="monitor">
+        <img src="a1.jpg" alt="comp" class="computer">
+        <img src="a2.jpg" alt="comp" class="computer">
+        <img src="a3.jpg" alt="comp" class="computer">
+        <img src="a4.jpg" alt="comp" class="computer">
+        <img src="a5.jpg" alt="comp" class="computer">
+    </div>
+    <div class="mouse">
+        <img src="m5.jpg" alt="mou" class="computer">
+        <img src="m3.jpg" alt="mou" class="computer">
+        <img src="m2.jpg" alt="mou" class="computer">
+        <img src="m1.jpg" alt="mou" class="computer">
+        <img src="m4.jpg" alt="mou" class="computer">
+    </div>
+    <div class="cpu">
+        <img src="cpu5.jpeg" alt="cp" class="computer">
+        <img src="cpu3.jpg" alt="cp" class="computer">
+        <img src="cpu2.jpg" alt="cp" class="computer">
+        <img src="cpu1.jpg" alt="cp" class="computer">
+        <img src="cpu4.jpg" alt="cp" class="computer">
+        <img src="cpu6.jpg" alt="cp" class="computer">
+    </div>
+    <div class="keyboard">
+        <img src="key5.jpg" alt="key" class="computer">
+        <img src="key2.jpg" alt="key" class="computer">
+        <img src="key1.jpg" alt="key" class="computer">
+        <img src="key4.jpg" alt="key" class="computer">
+    </div>
+    <br>
+    <a href="#" id="see">&gt;&gt;See More</a>
+    <div class="review">
+        <h2 id="rating">OUR HAPPY CUSTOMERS!</h2>
+
+        <div class="r1">
+            <div>
+                <img src="us1.png" alt="user1" id="rimg1" class="photo">
+            </div>
+            <div class="reviewtxt">
+                <p>"The products they deliver are amazing. I have been buying products from them since 2010, still I am unable to find    such company who could provide the best quality to their customers as  them. Moreover their delivery time is fixed and without any delay.   Thank you Alpha!"</p>
+                <p class="author">- Brad Burn, IT professional</p>
+            </div>
+        </div>
+        
+        <div class="r1">
+            <div>
+                <img src="us2.png" alt="user1" id="rimg1" class="photo">
+            </div>
+            <div class="reviewtxt">
+                <p>"Amazing work! I am really impressed with those keyboards. The keys are so soft! Yesterday, my keyboard fell off my desk and I thought it would have been broken. But no! The keyboard still looks the same. I'm really surprised to see such product."</p>
+            </div>
+            <p class="author">- Mark Rogers, Businessman</p>
+        </div>
+        
+        <div class="r1">
+            <div>
+                <img src="us4.png" alt="user1" id="rimg1" class="photo">
+            </div>
+            <div class="reviewtxt">
+                <p>"I have been buying from Alpha for 7 months now and their skill for creating such products is undefinable. Mind Blowing, I do not have words to say! The quality is superb and the cost is really cheap. 10/10 rating ⭐"</p>
+            </div>
+            <p class="author">- Sophia, Banker</p>
+        </div>
+
+        <div class="r1">
+            <div>
+                <img src="us5.png" alt="user1" id="rimg1" class="photo">
+            </div>
+            <div class="reviewtxt">
+                <p>"Always the top scorer in the market with their best selling products! Got my cousin a new gaming keyboard in January 2020 on his birthday. Till date, the keyboard works just perfectly."</p>
+            </div>
+            <p class="author">- Robert, Web Designer</p>
+        </div>
+        
+        <div class="r1">
+            <div>
+                <img src="us3.png" alt="user1" id="rimg1" class="photo">
+            </div>
+            <div class="reviewtxt">
+                <p>"Can't express my happiness! On a scale of 10, I want to give them thousands of stars! Their CPU is just the best, never heats and I can perform many actions smoothly without worrying about overheating!"</p>
+            </div>
+            <p class="author">- Shin Hua, UX Designer</p>
+        </div>
+        <div class="follow">
+            <p id="followup">Follow Alpha : </p>
+            <img src="facebook.png" alt="insta" class="social" id="icon1">
+            <img src="twitter.png" alt="insta" class="social" id="icon2">
+            <img src="instagram.png" alt="insta" class="social" id="icon3">
+            <img src="youtube.png" alt="insta" class="social" id="icon4">
+        </div>
+        <div class="last">
+        </div>
+        <div class="wholetable">
+            <div class="tablee1" >What's New</div>
+            <div class="tablee1">Profile</div>
+            <div class="tablee1">Developers</div>
+            <div class="tablee1">Company</div>
+            <div class="tablee1"></div>
+            <div class="tablee">Keyboards</div>
+            <div class="tablee">User Credentials</div>
+            <div class="tablee">Our Team</div>
+            <div class="tablee">Careers at Alpha</div>
+            <div class="tablee"></div>
+            <div class="tablee">CPU</div>
+            <div class="tablee">Reset Password</div>
+            <div class="tablee">Contact Us</div>
+            <div class="tablee">About Us</div>
+            <div class="tablee"></div>
+            <div class="tablee">Memory Cards</div>
+            <div class="tablee">Credentials</div>
+            <div class="tablee">Privacy at Alpha</div>
+            <div class="tablee">Company news</div>
+            <div class="tablee"></div>
+            <div class="tablee">Pendrives</div>
+            <div class="tablee">Orders</div>
+            <div class="tablee"></div>
+            <div class="tablee">Investors</div>
+            <div class="tablee" id="copyright1">🌎English (India)</div>
+            <div class="tablee">Monitors</div>
+            <div class="tablee"></div>
+            <div class="tablee"></div>
+            <div class="tablee">Security</div>
+            <div class="tablee" id="copyright2">‎ © Alpha 2023</div>
+        </div>
+    </body>
+</html>

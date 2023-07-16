@@ -1,0 +1,129 @@
+<!-- In this exercise, you need to create a webpage, where you have a navbar having 'Home', 'Mail Us', 'Contact' and 'About Us' at the top of the page. Then create two boxes and place one at the extreme left and other at the extreme right of the webpage. Make sure they both are in a same line and not in different lines. -->
+<!-- If you couldn't perform or complete the exercise then no need to worry, we have attached the solution down below. But make sure you try it yourself first and then check the solution out, by this way, it would help you a lot. Have fun coding! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display:flex;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+            font-size: 0.7cm;
+            background-color: black;
+            color: white;
+            text-align: center;
+            align-items: center;
+            height: 50px;
+        }
+        p { 
+            font-size: 0.8cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+        }
+        #a1 {
+            width: 25vw;
+        }
+        #a2 {
+            width: 25vw;
+        }
+        #a3 {
+            width: 25vw;
+        }
+        #a4 {
+            width: 25vw;
+        }
+        #box1 {
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            font-size: 0.7cm;
+            float: left;
+        }
+        #box2 {
+            background-color: rgb(255, 185, 245);
+            height: 200px;
+            width: 200px;
+            font-size: 0.7cm;
+            float: right;
+        }
+        .abc {
+            display: flex;
+            justify-content:space-between ;
+        }
+        #box11 {
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            font-size: 0.7cm;
+        }
+        #box22 {
+            background-color: rgb(255, 185, 245);
+            height: 200px;
+            width: 200px;
+            font-size: 0.7cm;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div id="a1">Home</div>
+        <div id="a2">Mail Us</div>
+        <div id="a3">Contact</div>
+        <div id="a4">About Us</div>
+    </div>
+    <br>
+    <br>
+    <p>Method 1 : Using float</p>
+    <br>
+    <div id="box1">Box1</div>
+    <div id="box2">Box2</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p>Method 2 : Using flexbox</p>
+    <br>
+    <div class="abc">
+        <div id="box11">Box1</div>
+        <div id="box22">Box2</div>
+    </div>
+</body>
+</html>

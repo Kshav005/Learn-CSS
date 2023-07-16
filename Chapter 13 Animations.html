@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 13</title>
+    <style>
+        p {
+            font-size: 0.7cm;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(0, 78, 63);
+        }
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+            background-color: rgb(255, 198, 247);
+            border: 2px dashed black;
+            text-align: center;
+            font-size: 0.8cm;
+        }
+        .box {
+            font-size: 0.8cm;
+            display:inline-block;
+            width: 300px;
+            height: 200px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            border: 5px solid rgb(0, 120, 195);
+        }
+        ul {
+            font-size: 0.6cm;
+            background-color: antiquewhite;
+            border: 2px dashed black;
+            font-family:'Times New Roman', Times, serif  ;
+            font-style: italic;
+        }
+
+
+        @keyframes Play {
+            from {width:25vw;}
+            to {width: 50vw;}
+        }
+        #a1 {
+            animation-name: Play;
+            animation-duration: 2s;
+        }
+        #a2 {
+            animation-name: Play;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        #a3 {
+            animation-name: Play;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        #a4 {
+            animation-name: Play;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+
+        @keyframes Color {
+            from {background-color: black;
+            color: white;}
+            to {background-color: rgb(255, 169, 169);
+            color: rgb(4, 0, 81);}
+        }
+        #b1 {
+            animation-name: Color;
+            animation-duration:2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate  ;
+        }
+
+
+        @keyframes Border {
+            from {border-color: rgb(0, 120, 195);}
+            to {border-color: red;}
+        }
+        #c1 {
+            animation-name: Border;
+            animation-duration:2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+    <p>Today, we are going to learn about animations! The most coolest feature of CSS and which enhances your webpage to a greater extent. It provides you better, and more controls than transition and transform. We can use '@keyframes' to change the original style to a brand new style!</p>
+    <p>@keyframes {animation-name} {from {width:15vw;} to{width:25vw;}}</p>
+    <div class="box">Box</div>
+    <p>Before continuing further, say hello to our new box which will help us understand animations better!</p>
+    <hr>
+    <p>Now, let's discuss about animation properties. </p>
+    <ul>
+        <li>animation-name : The name of the animation, it means you can give any name to your animation. (Works as identifier)</li>
+        <li>animation-duration : Used to set the duration of how long an animation should take place on your webpage.</li>
+        <li>animation-timing-function : Works same as the transition-timing-function.</li>
+        <li>animation-delay : Used to set after how much time, the animation should take place.</li>
+        <li>animation-iteration-count : Used to set the number of times the animation should run of an element.</li>
+        <li>animation-direction : Specifies the direction of the animation</li>
+    </ul>
+    <hr>
+    <p>Let's try performing an animation on the box!</p>
+    <h2>Adding animation</h2>
+    <div class="box" id="a1">Box</div>
+    <h2>Adding animation along with iteration.</h2>
+    <div class="box" id="a2">Box</div>
+    <h2>Adding animation in opposite direction by 'animation-direction: reverse'</h2>
+    <div class="box" id="a3">Box</div>
+    <h2>Repeating the from and to animation by using 'animation-direction: alternate'</h2>
+    <div class="box" id="a4">Box</div>
+    <h2>Trying with colors</h2>
+    <div class="box" id="b1">Box</div>
+    <h2>Trying with borders</h2>
+    <div class="box" id="c1">Box</div>
+    <h2>Shorthand Property</h2>
+    <p>'animation: an ad atf d di' where an is animation name, ad is animation duration, atf is animation timing function, d is animation delay, di is animation direction.</p>
+    
+
+</body>
+</html>
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 13</title>
+    <style>
+        p {
+            font-size: 0.7cm;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(0, 78, 63);
+        }
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+            background-color: rgb(255, 198, 247);
+            border: 2px dashed black;
+            text-align: center;
+            font-size: 0.8cm;
+        }
+        .box {
+            font-size: 0.8cm;
+            display:inline-block;
+            width: 300px;
+            height: 200px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            border: 5px solid rgb(0, 120, 195);
+        }
+        ul {
+            font-size: 0.6cm;
+            background-color: antiquewhite;
+            border: 2px dashed black;
+            font-family:'Times New Roman', Times, serif  ;
+            font-style: italic;
+        }
+
+
+        @keyframes Play {
+            from {width:25vw;}
+            to {width: 50vw;}
+        }
+        #a1 {
+            animation-name: Play;
+            animation-duration: 2s;
+        }
+        #a2 {
+            animation-name: Play;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        #a3 {
+            animation-name: Play;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        #a4 {
+            animation-name: Play;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+
+        @keyframes Color {
+            from {background-color: black;
+            color: white;}
+            to {background-color: rgb(255, 169, 169);
+            color: rgb(4, 0, 81);}
+        }
+        #b1 {
+            animation-name: Color;
+            animation-duration:2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate  ;
+        }
+
+
+        @keyframes Border {
+            from {border-color: rgb(0, 120, 195);}
+            to {border-color: red;}
+        }
+        #c1 {
+            animation-name: Border;
+            animation-duration:2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        #c2 {
+            animation: Play  1s ease-in-out 1 alternate;
+            animation-iteration-count: infinite;
+        }
+
+
+        @keyframes Special {
+            0% {background-color: black;
+            color: white;}
+            50% {background-color: blue; 
+            color: white;}
+            100% {background-color: green;
+            }
+        }
+        #c3 {
+            animation-name: Special;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <p>Today, we are going to learn about animations! The most coolest feature of CSS and which enhances your webpage to a greater extent. It provides you better, and more controls than transition and transform. We can use '@keyframes' to change the original style to a brand new style!</p>
+    <p>@keyframes {animation-name} {from {width:15vw;} to{width:25vw;}}</p>
+    <div class="box">Box</div>
+    <p>Before continuing further, say hello to our new box which will help us understand animations better!</p>
+    <hr>
+    <p>Now, let's discuss about animation properties. </p>
+    <ul>
+        <li>animation-name : The name of the animation, it means you can give any name to your animation. (Works as identifier)</li>
+        <li>animation-duration : Used to set the duration of how long an animation should take place on your webpage.</li>
+        <li>animation-timing-function : Works same as the transition-timing-function.</li>
+        <li>animation-delay : Used to set after how much time, the animation should take place.</li>
+        <li>animation-iteration-count : Used to set the number of times the animation should run of an element.</li>
+        <li>animation-direction : Specifies the direction of the animation</li>
+    </ul>
+    <hr>
+    <p>Let's try performing an animation on the box!</p>
+    <h2>Adding animation</h2>
+    <div class="box" id="a1">Box</div>
+    <h2>Adding animation along with iteration.</h2>
+    <div class="box" id="a2">Box</div>
+    <h2>Adding animation in opposite direction by 'animation-direction: reverse'</h2>
+    <div class="box" id="a3">Box</div>
+    <h2>Repeating the from and to animation by using 'animation-direction: alternate'</h2>
+    <div class="box" id="a4">Box</div>
+    <h2>Trying with colors</h2>
+    <div class="box" id="b1">Box</div>
+    <h2>Trying with borders</h2>
+    <div class="box" id="c1">Box</div>
+    <h2>Shorthand Property</h2>
+    <p>'animation: an ad atf ati d di' where an is animation name, ad is animation duration, atf is animation timing function, ati is animation iteration count, d is animation delay, di is animation direction.</p>
+    <div class="box" id="c2">Box</div>
+    <hr>
+    <p>You can also tell CSS what animation to perform when certain percentage is completed. For example, I would like to change the color of the box to blue when 50% animation completes and then change to green color at 100%. </p> 
+    <div class="box" id="c3">Box</div>
+    <hr>
+    <p>So, we learnt that we can create or define animations using '@keyframes' and then apply that animation to an element by using the property 'animation-name' and thus, can create really meaningful animations which can be pleasing to the visitors!</p>
+</body>
+</html>

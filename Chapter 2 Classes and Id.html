@@ -1,0 +1,57 @@
+<!-- There are two attributes known as 'id' and 'class' in HTML. An element can have more than 1 class but an id can't be multiple as it is unique name given to specific element. Let's find out the difference in both of these in this chapter! -->
+
+<!-- But just make sure that your css code comes under head tag and which also comes under style tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      p {
+        font-size: 0.7cm;
+      }
+      .More {
+        background-color: coral;
+      }
+      #hi {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: tomato;
+        background-color: black;
+      }
+    </style>
+
+    <title>Chapter 2</title>
+  </head>
+  <body>
+    <!-- To change this whole section of heading and paragraph, we will be using class in div tag. We can also use id tag but we are just learningabout  how to use classes and all -->
+
+    <div class="More">
+      <h1>Cats</h1>
+      <p>This is information about cats. Did you know a cat has 9 lives?</p>
+    </div>
+
+    <div id="hi">
+      <h1>Classes and Ids</h1>
+      <p>
+        This doesn't come under the above div. If you look closely then here, we
+        specified 'id' and not a class. We prefix '.' (fullstop) in CSS code for
+        classes and '#' to specify ID
+      </p>
+    </div>
+
+    <p>
+      Doesn't that look really beautiful to specify particular color for
+      particular element?
+    </p>
+    <br />
+    <p>There are total 3 ways to use CSS.</p>
+    <ul>
+      <li>Inline CSS</li>
+      <li>Style Tag</li>
+      <li>External CSS</li>
+    </ul>
+    <p>
+      The current CSS we did is Style Tag one. The other ways, we will be
+      learning them in the later chapters or in the end.
+    </p>
+  </body>
+</html>
